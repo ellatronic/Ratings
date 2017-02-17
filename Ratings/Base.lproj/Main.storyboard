@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="YWz-8y-51A">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="YWz-8y-51A" customClass="PlayerCellTableViewCell" customModule="Ratings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YWz-8y-51A" id="bOn-ks-hRw">
@@ -110,6 +110,11 @@
                                         <constraint firstAttribute="bottom" secondItem="SC2-aw-zig" secondAttribute="bottom" id="pAY-ar-YHP"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="WwY-CO-kjO" id="3L5-1e-Sk0"/>
+                                    <outlet property="nameLabel" destination="JZ3-si-Vq3" id="LlG-RQ-wwQ"/>
+                                    <outlet property="ratingImageView" destination="iXm-Ag-IeQ" id="2vw-Y3-dd0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
