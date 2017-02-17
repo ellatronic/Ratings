@@ -11,6 +11,7 @@
 		4901B1FC1E5527DF00F9CE10 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901B1FB1E5527DF00F9CE10 /* Player.swift */; };
 		4901B1FE1E55286B00F9CE10 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901B1FD1E55286B00F9CE10 /* SampleData.swift */; };
 		4901B21E1E56C2EE00F9CE10 /* PlayerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901B21D1E56C2EE00F9CE10 /* PlayerCellTableViewCell.swift */; };
+		4901B2201E56C74E00F9CE10 /* PlayerDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901B21F1E56C74E00F9CE10 /* PlayerDetailsTableViewController.swift */; };
 		494052521E54252A00A229A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494052511E54252A00A229A8 /* AppDelegate.swift */; };
 		494052541E54252A00A229A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494052531E54252A00A229A8 /* ViewController.swift */; };
 		494052571E54252A00A229A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494052551E54252A00A229A8 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		4901B1FB1E5527DF00F9CE10 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4901B1FD1E55286B00F9CE10 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		4901B21D1E56C2EE00F9CE10 /* PlayerCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCellTableViewCell.swift; sourceTree = "<group>"; };
+		4901B21F1E56C74E00F9CE10 /* PlayerDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsTableViewController.swift; sourceTree = "<group>"; };
 		4940524E1E54252A00A229A8 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494052511E54252A00A229A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494052531E54252A00A229A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				4901B21D1E56C2EE00F9CE10 /* PlayerCellTableViewCell.swift */,
 				4901B1FB1E5527DF00F9CE10 /* Player.swift */,
 				4901B1FD1E55286B00F9CE10 /* SampleData.swift */,
+				4901B21F1E56C74E00F9CE10 /* PlayerDetailsTableViewController.swift */,
 				494052551E54252A00A229A8 /* Main.storyboard */,
 				494052581E54252A00A229A8 /* Assets.xcassets */,
 				4940525A1E54252A00A229A8 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				494052521E54252A00A229A8 /* AppDelegate.swift in Sources */,
 				4901B1FE1E55286B00F9CE10 /* SampleData.swift in Sources */,
 				4901B1FA1E55273B00F9CE10 /* PlayersTableViewController.swift in Sources */,
+				4901B2201E56C74E00F9CE10 /* PlayerDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
