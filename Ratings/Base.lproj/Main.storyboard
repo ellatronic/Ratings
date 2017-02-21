@@ -206,7 +206,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="l88-1M-MBY">
                             <connections>
-                                <segue destination="Sas-Em-2N5" kind="unwind" unwindAction="savePlayerDetailWithSegue:" id="5UJ-cw-JOL"/>
+                                <segue destination="Sas-Em-2N5" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetailWithSegue:" id="5UJ-cw-JOL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -11,7 +11,24 @@ import UIKit
 class PlayerDetailsTableViewController: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
-
+    
+    var player: Player?
+    
+    required init?(coder aDecoder: NSCoder) {
+        print("init PlayerDetailsTableViewController")
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        print("deinit PlayerDetailsTableViewController")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SavePlayerDetail" {
+            player = Player(name: nameTextField.text!, game: "Chess", rating: 1)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
