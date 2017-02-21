@@ -13,6 +13,18 @@ class PlayerDetailsTableViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     var player: Player?
+    var game: String = "Chess" {
+        didSet {
+            detailLabel.text? = game
+        }
+    }
+    
+    @IBAction func unwindWithSelectedGame(segue:UIStoryboardSegue) {
+        if let gamePickerViewController = segue.source as? GamePickerTableViewController,
+            let selectedGame = gamePickerViewController.selectedGame {
+            game = selectedGame
+        }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         print("init PlayerDetailsTableViewController")
@@ -25,7 +37,13 @@ class PlayerDetailsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: nameTextField.text!, game: "Chess", rating: 1)
+            player = Player(name: nameTextField.text!, game: game, rating: 1)
+        }
+        
+        if segue.identifier == "PickGame" {
+            if let gamePickerViewController = segue.destination as? GamePickerTableViewController {
+                gamePickerViewController.selectedGame = game
+            }
         }
     }
     
